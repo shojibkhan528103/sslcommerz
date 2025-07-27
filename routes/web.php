@@ -4,7 +4,7 @@ use App\Http\Controllers\SslCommerzPaymentController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('ssl_index');
 });
 // SSLCOMMERZ Start
 Route::post('/pay', [SslCommerzPaymentController::class, 'index'])->name('pay_index');
