@@ -28,8 +28,7 @@
         <div class="col-md-6">
             <div class="card shadow-lg rounded-4 p-4">
                 <h4 class="mb-4 text-center">SSLCommerz Payment</h4>
-
-                <form action="/pay" method="POST">
+                <form action="{{ route('pay_index') }}" method="POST">
                     <div class="row mb-3">
 
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -78,8 +77,8 @@
                             <label class="form-label">Note</label>
                             <div class="input-group">
                                 <span class="input-group-text"><i class="fa-solid fa-pen-to-square"></i></span>
-                                <input type="text" name="cus_note" class="form-control" placeholder="Note (optional)"
-                                    required>
+                                <input type="text" name="cus_note" class="form-control"
+                                    placeholder="Note (optional)">
                             </div>
                         </div>
                     </div>
